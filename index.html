@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fawrportfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/669e81a412.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .foto-perfil {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .corprimaria {
+            background-color: #3C4743;
+        }
+
+        .corsecundaria {
+            background-color: #2c3e50;
+        }
+
+        p {
+            font-family: lato 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+            color: black !important;
+        }
+
+        .icones {
+            padding-left: 5px;
+        }
+
+        .titulosBrancos {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+
+        .titulosCinzaLondres {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #3c4743;
+        }
+
+        .textoBranco {
+            color: white !important;
+        }
+
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+
+        .textoFooter {
+            margin: 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .card-img {
+            cursor: pointer;
+        }
+
+        #modal_img {
+            width: 65vw;
+        }
+
+        .modal {
+            width: 100vw;
+            height: 100vw;
+            background-color: rgba(0, 0, 0, .7);
+            position: fixed;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="corsecundaria navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand textoBranco" href="#">Fernando Rangel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            </ul>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link textoBranco btnProjetos" style="cursor: pointer">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textoBranco btnSobre" style="cursor: pointer">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textoBranco btnAceleracoes" style="cursor: pointer">Acelerações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textoBranco btnContato" style="cursor: pointer">Contato</a>
+              </li>
+          </div>
+      </nav>
+      <section class="py-5 text-center container corprimaria">
+        <div class="container">
+            <img class="foto-perfil" src="https://lh3.google.com/u/0/d/1H45vSAFjjxs9T-ZNupwB8Mdk8jS7bqJA=w1045-h757-iv1" alt="">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="jumbotron-heading textoBranco">Fernando Rangel</h1>
+            <p class="lead textoBranco">Front-end | Back-end Developer</p>
+            <p>
+              <a class="btn btn-primary my-2 btnContato">Contato</a>
+            </p>
+            <a href="https://www.linkedin.com/in/fernando-rangel-033b58113/"> <i class="icones fab fa-linkedin"></i></a>
+            <a href="https://github.com/FernandoAWRangel"> <i class="icones fab fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5581998870839"> <i class="icones fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </section>
+      <div class="album py-5 bg-light" id="Projetos">
+        <div class="container">
+          <h2 class="jumbotron heading text-center titulosCinzaLondres">Projetos</h2>
+          <div class="row">
+            <div class="col-6">
+              <div class="card shadow-sm">
+                <img class="card-img" src="img/tela.png" class="small_img"></img>
+                <div class="card-body">
+                  <p class="card-text">Recriando página de login do Instagram</p>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Flexbox</li>
+                    <li>Fireworks-CS6 (ajuste de imagem)</li>
+                  </ul>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="?????????????"> <button type="button" class="btn btn-sm btn-outline-success">Verificar projeto</button> </a>
+                      <a href="https://github.com/FernandoAWRangel/uploadRecriandoPaginaInicialDoInstagram"> <button type="button" class="btn btn-sm btn-outline-success">Código</button> </a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" src="img/tela_login.png" width="100%" height="350"  role="img" ><text x="50%" y="50%"></text></img>
+                  <div class="card-body">
+                    <p class="card-text">Tela de Login simples</p>
+                    <ul>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>Java Script</li>
+                      <br/>
+                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+              <br/>
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" src="img/tela01.fw.png" width="100%" height="350"  role="img" ><text x="50%" y="50%"></text></img>
+                <div class="card-body">
+                  <p class="card-text">Tela para sistema de cadastro / consulta</p>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>Bootstrap4</li>
+                    <br/>
+                  </ul>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <!--Sobre Mim-->>
+      <section class="jumbotron text-center corprimaria" id="sobre-mim">
+        <div class="container">
+          <h2 class="jumbotron-heading titulosBrancos">Sobre mim:</h2>
+          <p class="lead textoBranco">Carreira em evolução na área de Tecnologia da Informação; Procuro-me manter atualizado das
+            tecnologias mais utilizadas pelas empresas, dessa forma, agregando valores a futuras oportunidades.</p>
+        </div>
+      </section>
+
+      <!--Aceleraçoes-->
+      <section class="jumbotron text-center" id="acelerações">
+        <div class="container">
+          <h2 class="jumbotron-heading titulosCinzaLondres">Acelerações:</h2>
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>SANTANDER CODERS MOBILE 2020</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+               <cite title="Source Title">Não foi gerado certificado</cite>
+            </figcaption>
+          </figure>
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>Decola Dev Avanade 2021</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+               <a href="https://certificates.digitalinnovation.one/D4CAEAD0"> <cite title="Source Title">Verificar certificado</cite> </a>
+            </figcaption>
+          </figure>
+        </div>  
+      </section>
+
+      <!--Contatos-->
+    <section class="corprimaria" id="Contato">
+      <div>
+        <div class="container-fluid">
+          <h3 style="padding-bottom: 20px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
+          <a href="mailto:fernandoawrangel@gmail.com"><h4 style="padding-bottom: 20px;" class="text-center">fernandoawrangel@gmail.com</h4></a>
+          <a href="https://drive.google.com/file/d/1q-CVx8zfKnmdtx4qH9WDch4fUCEt6Htl/view?usp=sharing"><h4 style="padding-bottom: 20px;" class="text-center">Link para baixar meu currrículo</h4></a>
+        </div>
+      </div>
+    </section>
+    
+    <!--footer-->
+    <footer class="text-center corsecundaria textoFooter">
+      <p class="textoBranco">Atualizado em 05 de 2021</p>
+    </footer>
+    
+    <script>
+        window.onbeforeunload = function(){
+            window.scrollTo(0, 0);
+        }
+        window.onload = function () {
+            $('html').css('scroll-behavior', 'unset');
+            window.scrollTo(0, 0);
+            $('body').show();
+        }
+
+        $('.btnContato').on('click', function () {
+            
+            $('html,body').animate({
+                scrollTop: $("#Contato").offset().top
+            }, 'slow');
+        });
+    
+        $('.btnProjetos').on('click', function () {
+
+            $('html,body').animate({
+                scrollTop: $("#Projetos").offset().top
+            }, 'slow');
+        });
+
+        $('.btnSobre').on('click', function () {
+
+            $('html,body').animate({
+                scrollTop: $("#sobre-mim").offset().top
+            }, 'slow');
+        });
+
+        $('.btnAceleracoes').on('click', function () {
+
+            $('html,body').animate({
+                scrollTop: $("#acelerações").offset().top
+            }, 'slow');
+        });
+    </script>
+</body>
+</html>
+
+
+
