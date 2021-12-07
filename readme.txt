@@ -1,1 +1,1 @@
-Este portfolio esta em desenvolvimento, sofrendo atualzações diárias.
+Este portfolio esta em desenvolvimento, sofrendo atualizações diárias.
